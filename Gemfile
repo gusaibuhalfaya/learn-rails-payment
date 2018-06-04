@@ -15,6 +15,8 @@ gem 'pg', group: :production
 
 gem 'rails_12factor', group: :production
 
+gem 'bootstrap-sass'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
