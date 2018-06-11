@@ -18,3 +18,5 @@ niceDog = Product.create(title: "Quality Dog",
  details: "A really nice dog", description: %{<p>It's a dog</p>
  })
 
+Category.create(name: "Female T-Shirt")
+Category.create(name: "Male T-Shirt")
