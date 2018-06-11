@@ -1,229 +1,71 @@
-/*REUSABLE STYLES */
-
-img {
-    max-width: 100%;
-}
-
-ul.no-indent {
-    list-style-position: inside;
-    padding-left: 0px;
-}
-
-.glyphicon {
-    margin-right: 10px;
-}
-
-.content-qualifier {
-    color: #999;
-}
-
-.container {
-    max-width: 640px;
-    min-width: 320px;
-}
-
-.font-weight-heavy {
-    font-weight: 800;
-}
-
-.font-weight-light {
-    font-weight: 300;
-}
-
-/* SHARED PAGE STYLES */
-
 body {
-    background-color:#80c2eb;   
-    background-size: 25%;
-    font-family: 'Open Sans', sans-serif;
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
-#content {
-    margin: 40px auto 20px auto;
-    background: white;
-    padding: 0px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow:  -2px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    position: relative;
+.navbar {
+  margin-bottom: 0;
 }
 
-#content-header {
-    position: relative;
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background-image: url('https://s3.amazonaws.com/rails-learn-paymentapp-bucket/accessories-accessory-bag-322207.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover; 
 }
 
-#site-footer {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-#footer-logo {
-    height: 12px;
-    margin-top: -3px;
+.jumbotron-heading {
+  font-weight: 300;
 }
 
-#modal-left {
-    width: 55%;
+.jumbotron .container {
+  max-width: 40rem;
+  background-color: rgba(255,255,255,0.2);
+  padding: 2rem;
+  color: white;
 }
 
-#modal-right {
-    width: 35%;
+.jumbotron p {
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/* HOME PAGE STYLES */
-
-#price-container {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 100px;
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
 }
 
-#price-container .glyphicon-tag {
-    color: #df5a8e;
-    font-size: 40px;
-    position: absolute;
-    z-index: 1;
-    margin-right: 0px;
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
 }
 
-#price-container .price {
-    font-weight: 400;
-    font-size: 15px;
-    background: #c3316a;
-    color: white;
-    position: absolute;
-    left: 16px;
-    top: 0px;
-    padding: 0px 20px 0px 25px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+.card > img {
+  margin-bottom: .75rem;
+  max-width: 100% ;
 }
 
-#content-details {
-    padding: 15px;
+.card-text {
+  font-size: 85%;
 }
 
-#details-article {
-    border-right: 1px solid #ccc;
-    padding: 0px 40px;
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-#article-title {
-    margin-top: 0px;
-    font-weight: 800;
-}
-
-#details-infobox {
-    margin-top: 15px;
-    width: 100%;
-}
-
-#details-infobox .list-group-item.active {
-    background: #3d4561;
-    color: white;
-}
-
-#btn-buy .glyphicon {
-    margin-left: -10px;
-}
-
-/* RECEIPT */
-
-#content-receipt {
-    background: #eee;
-    height: 400px;
-    width: 100%;
-    margin: 0;
-    position:  relative;
-}
-
-#receipt-container {
-    position: relative;
-    width: 50%;
-    height: 75%;
-    background: white;
-    margin: -20px auto 0 auto;
-    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dotmatrix {
-    background: url('../img/dot-matrix.svg') 50% 0% repeat-y #fff;
-    height: 100%;
-    background-size: 50%;
-    width: 10%;
-    position: absolute;
-}
-
-.dotmatrix.left {
-    border-right: 1px dotted #ccc;
-    left: 0px;
-}
-
-.dotmatrix.right {
-    border-left: 1px dotted #ccc;
-    right: 0px;
-}
-
-#receipt-content {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    padding: 15px 15%;
-    width: 100%;
-    color: #666;
-}
-
-#receipt-title {
-    font-weight: 800;
-    border-bottom: 1px dotted #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-#receipt-shadow {
-    position: absolute;
-    width: 60%;
-    height: 20px;
-    border-radius: 20px;
-    background: #666;
-    left: 50%;
-    -webkit-transform: translate(-50%,-15px);
-    transform: translate(-50%,-15px);
-    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-#receipt-footer {
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px dotted #ccc;
-}
-
-#receipt-footer small {
-    font-size: 10px;
-    font-weight: 300;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 991px) {
-    #details-aside {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 767px) {
-    #content {
-        margin: 0px 0px 20px 0px;
-        border-radius: 0px;
-    }
-
-    #details-article {
-        padding: 0px 15px;
-    }
-
-
+footer p {
+  margin-bottom: .25rem;
 }
 

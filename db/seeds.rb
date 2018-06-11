@@ -17,3 +17,4 @@ niceDog = Product.create(title: "Quality Dog",
  price: "4.99", sku: "dogOne", info: "cute pup", download_url: "https://s3-us-west-2.amazonaws.com/rails-learnapp-dog/dog.jpg", 
  details: "A really nice dog", description: %{<p>It's a dog</p>
  })
+
